@@ -14,12 +14,13 @@ background-color = rgba(240,240,240,0.7)
     &:hover
       text-decoration underline
   .repo-header
-    padding 5px 10px
     background background-color 
 
     .repo-stats
-      font-size 12px
-      float right
+      font-size: 12px
+      float: right
+      margin: 5px 10px 0 0
+      line-height: 20px
       span
       a
         padding-right 5px
@@ -31,8 +32,13 @@ background-color = rgba(240,240,240,0.7)
       .repo-forks
         background url(images/repostat.png) no-repeat
         background-position 5px -55px
+      .repo-twitter
+        float: right
+        margin-left: 5px
+
 
     .repo-name
+      padding 5px 10px
       font-size 18px
       letter-spacing 2px
       display block
@@ -49,8 +55,4 @@ background-color = rgba(240,240,240,0.7)
       font-size 12px
       color #333
 
-  .repo-twitter
-    bottom 5px
-    right 5px
-    position absolute
 
