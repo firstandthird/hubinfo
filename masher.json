@@ -9,7 +9,7 @@
       "scripts": [
         "scripts/copyright.js",
         "scripts/hubinfo.js",
-        "../template.js"
+        "../dist/templates/default.js"
       ]
     }
   },

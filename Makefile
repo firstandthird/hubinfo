@@ -1,12 +1,12 @@
 SRC = $(shell find lib -type f)
+TEMPLATES = $(shell find lib/templates -type f)
 
 all: dist/hubinfo.js
 
-dist/hubinfo.js: $(SRC) 
-	@./support/template.js lib/templates/default.html > template.js
+dist/hubinfo.js: $(SRC)
+	@./support/templates.js lib/templates dist/templates
 	@./node_modules/.bin/masher masher.json
-	cp -r lib/images dist/
-	rm template.js
+	@cp -r lib/images dist/
 
 
 install:
