@@ -1,13 +1,12 @@
 SRC = $(shell find lib -type f)
-TEMPLATES = $(shell find lib/templates -type f)
 
 all: dist/hubinfo.js
 
 dist/hubinfo.js: $(SRC)
-	@./support/templates.js lib/templates dist/templates
 	@./node_modules/.bin/masher masher.json
+	@cat lib/scripts/copyright.js dist/hubinfo.min.js > dist/hubinfo.min.tmp
+	@mv dist/hubinfo.min.tmp dist/hubinfo.min.js
 	@cp -r lib/images dist/
-
 
 install:
 	npm install masher

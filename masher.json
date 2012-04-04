@@ -8,9 +8,21 @@
       ],
       "scripts": [
         "scripts/copyright.js",
-        "scripts/hubinfo.js",
-        "../dist/templates/default.js"
+        "scripts/hubinfo.js"
       ]
+    },
+    "hubinfo.min": {
+      "styles": [
+        "styles/hubinfo.styl"
+      ],
+      "scripts": [
+        "scripts/hubinfo.js"
+      ],
+      "plugins": {
+        "post": [
+          "compress"
+        ]
+      }
     }
   },
   "plugins": {
