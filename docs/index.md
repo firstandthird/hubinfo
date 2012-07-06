@@ -12,9 +12,9 @@ HubInfo is a jQuery plugin to show information about your GitHub repo.  Here is 
 ## Usage
 Include hubinfo.js and hubinfo.css on your page and then put this in a script tag:
 
-	$('#hubInfo').hubInfo({ 
-		user: 'jgallen23',
-		repo: 'hubinfo'
+	$("#hubInfo").hubInfo({ 
+		user: "jgallen23",
+		repo: "hubinfo"
 	});
 
 ##History
