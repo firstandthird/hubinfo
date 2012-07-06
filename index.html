@@ -24,6 +24,19 @@ _gaq.push(['_trackPageview']);
     <span class="rule"><span class="attribute">user</span>:<span class="value"> <span class="string">"jgallen23"</span>,
     repo: <span class="string">"hubinfo"</span>
 </span>}</span></span>);</code></pre>
+<h2>Advanced</h2>
+<p>Out of the box, the twitter share widget isn&#39;t there, but if you want to add it, you can do something like this:
+
+</p>
+<pre><code>var hubInfo = $("#hubInfo").hubInfo({ 
+    user: "jgallen23",
+    repo: "hubinfo"
+});
+
+hubInfo.on('render', function() {
+    $('<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://twitter.com/share"</span> <span class="attribute">class</span>=<span class="value">"twitter-share-button"</span> <span class="attribute">data-via</span>=<span class="value">"JGAui"</span>></span>Tweet<span class="tag">&lt;/<span class="title">a</span>></span>').insertAfter('.repo-forks');
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+});</code></pre>
 <h2>History</h2>
 <p><a href="https://raw.github.com/jgallen23/hubinfo/master/history.md">View</a>
 
@@ -36,6 +49,7 @@ _gaq.push(['_trackPageview']);
   user: 'jgallen23',
   repo: 'hubinfo'
 }).on('render', function() {
+  $('<a href="https://twitter.com/share" class="twitter-share-button" data-via="JGAui">Tweet</a>').insertAfter('.repo-forks');
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 });
 $('h2:eq(0)').before(ghInfo);</script><script>$('#toc').toc();</script></body></html>
