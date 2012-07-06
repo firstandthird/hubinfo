@@ -1,1 +1,41 @@
-My Page
+<!DOCTYPE html><html><head><title>HubInfo | A Github Repo Widget</title><link href="http://fonts.googleapis.com/css?family=Voces" rel="stylesheet" type="text/css"><link rel="stylesheet" href="dist/common.css"/><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-24017782-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body><div id="toc"></div><a href="http://github.com/jgallen23/hubinfo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="dist/images/ribbon.png" alt="Fork me on GitHub"></a><div id="wrapper"><h1>HubInfo</h1>
+<p>HubInfo is a jQuery plugin to show information about your GitHub repo.  Here is an example:
+
+
+</p>
+<h2>Download</h2>
+<ul>
+<li>Production <a href="https://raw.github.com/jgallen23/hubinfo/master/dist/hubinfo.min.js">js</a> / <a href="https://raw.github.com/jgallen23/hubinfo/master/dist/hubinfo.min.css">css</a></li>
+<li>Development <a href="https://raw.github.com/jgallen23/hubinfo/master/dist/hubinfo.js">js</a> / <a href="https://raw.github.com/jgallen23/hubinfo/master/dist/hubinfo.css">css</a></li>
+<li><a href="http://github.com/jgallen23/hubinfo">Source</a></li>
+</ul>
+<h2>Usage</h2>
+<p>Include hubinfo.js and hubinfo.css on your page and then put this in a script tag:
+
+</p>
+<pre><code>$(<span class="comment">'#hubInfo').hubInfo({ </span>
+    user: <span class="comment">'jgallen23',</span>
+    repo: <span class="comment">'hubinfo'</span>
+});</code></pre>
+<h2>History</h2>
+<p><a href="https://raw.github.com/jgallen23/hubinfo/master/history.md">View</a>
+
+</p>
+<h2>Contributors</h2>
+<ul>
+<li>Greg Allen (<a href="http://twitter.com/jgaui">@jgaui</a>) <a href="http://jga.me">jga.me</a></li>
+</ul>
+</div><script src="dist/common.js"></script><script>var ghInfo = $('<div/>').hubInfo({ 
+  user: 'jgallen23',
+  repo: 'hubinfo'
+}).on('render', function() {
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+});
+$('h2:eq(0)').before(ghInfo);</script><script>$('#toc').toc();</script></body></html>
