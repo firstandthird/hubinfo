@@ -1,6 +1,6 @@
 {
   "assetPath": "lib",
-  "outputPath": "dist",
+  "outputDir": "../dist",
   "groups": {
     "hubinfo": {
       "styles": [
