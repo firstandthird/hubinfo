@@ -1,0 +1,20 @@
+{
+  "author": "Greg Allen",
+  "name": "hubinfo",
+  "description": "A client side github widget for repo info",
+  "version": "0.1.0",
+  "homepage": "http://projects.jga.me/hubinfo/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com//jgallen23/hubinfo.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "masher": "0.5.0alpha1",
+    "stylus": "0.28.2"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
