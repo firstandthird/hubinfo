@@ -1,4 +1,11 @@
 
+0.1.1 / 2012-07-25 
+==================
+
+  * added package.json, updated makefile, updated masher
+  * Merge pull request #1 from heipei/master
+  * Use correct commitUrl when linking to commit
+
 0.1.0 / 2012-07-06 
 ==================
 
