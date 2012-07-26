@@ -2,7 +2,7 @@
   "author": "Greg Allen",
   "name": "hubinfo",
   "description": "A client side github widget for repo info",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "http://projects.jga.me/hubinfo/",
   "repository": {
     "type": "git",

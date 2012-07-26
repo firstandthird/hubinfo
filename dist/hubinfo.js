@@ -1,6 +1,6 @@
 /*
   * hubInfo - a github repo widget 
-  * v0.1.1
+  * v0.1.2
   * https://github.com/jgallen23/hubinfo
   * copyright JGA 2012
   * MIT License
@@ -97,7 +97,7 @@
             .end()
           .find('.repo-commit-message')
             .html(lastCommit.commit.message)
-            .attr('href', lastCommit.url)
+            .attr('href', 'https://github.com/'+opts.user+'/'+opts.repo+'/commit/' + lastCommit.sha)
             .end()
           .find('.repo-commit-date span')
             .html(relativeDate(lastCommit.commit.committer.date))
