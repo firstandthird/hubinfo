@@ -47,13 +47,18 @@
   letter-spacing: 2px;
   display: block;
 }
-.github-repo .repo-commit {
+.github-repo .repo-commits {
   padding: 10px;
 }
-.github-repo .repo-commit .repo-commit-message {
+.github-repo .repo-commits .repo-commit-message {
   color: #000;
+  margin-top: 20px;
+  display: block;
 }
-.github-repo .repo-commit .repo-commit-date {
+.github-repo .repo-commits .repo-commit-message.nb0 {
+  margin-top: 0;
+}
+.github-repo .repo-commits .repo-commit-date {
   display: block;
   margin-top: 10px;
   letter-spacing: 0;
