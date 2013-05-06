@@ -4,9 +4,9 @@
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   box-shadow: 0px 0px 3px #333;
-  background: url("images/Octocat.png") no-repeat right bottom;
+  background: url(images/Octocat.png) no-repeat right bottom;
 }
 .github-repo a {
   text-decoration: none;
@@ -15,7 +15,7 @@
   text-decoration: underline;
 }
 .github-repo .repo-header {
-  background: rgba(240,240,240,0.7);
+  background-color: rgba(240, 240, 240, 0.7);
 }
 .github-repo .repo-header .repo-stats {
   font-size: 12px;
@@ -30,11 +30,11 @@
   color: #000;
 }
 .github-repo .repo-header .repo-stats .repo-watchers {
-  background: url("images/repostat.png") no-repeat;
+  background: url(images/repostat.png) no-repeat;
   background-position: 5px -5px;
 }
 .github-repo .repo-header .repo-stats .repo-forks {
-  background: url("images/repostat.png") no-repeat;
+  background: url(images/repostat.png) no-repeat;
   background-position: 5px -55px;
 }
 .github-repo .repo-header .repo-stats .repo-twitter {

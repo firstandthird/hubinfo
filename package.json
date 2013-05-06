@@ -2,19 +2,24 @@
   "author": "Greg Allen",
   "name": "hubinfo",
   "description": "A client side github widget for repo info",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "homepage": "http://projects.jga.me/hubinfo/",
+  "license": "MIT",
+  "copyright": "Greg Allen",
   "repository": {
     "type": "git",
     "url": "git://github.com//jgallen23/hubinfo.git"
   },
-  "dependencies": {},
   "devDependencies": {
-    "masher": "0.5.0alpha1",
-    "stylus": "0.28.2"
-  },
-  "optionalDependencies": {},
-  "engines": {
-    "node": "*"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-less": "~0.5.1",
+    "grunt-reloadr": "~0.1.2",
+    "install": "~0.1.7",
+    "npm": "~1.2.19"
   }
 }
