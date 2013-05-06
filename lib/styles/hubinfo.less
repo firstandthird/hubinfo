@@ -1,16 +1,12 @@
-@borderColor: #ccc;
-@backgroundColor: rgba(240,240,240,0.7);
 @linkColor: #4183c4;
+@textColor: #333;
+@updatedColor: #999;
 
 .github-repo {
   position: relative;
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
-  border-radius: 5px;
-  border: 1px solid @borderColor;
-  box-shadow: 0px 0px 3px #333;
-  background: url(images/Octocat.png) no-repeat right bottom;
 
   a {
     text-decoration: none;
@@ -21,8 +17,6 @@
   }
 
   .repo-header {
-    background-color: @backgroundColor;
-
     .repo-stats {
       font-size: 12px;
       float: right;
@@ -52,19 +46,20 @@
     }
 
     .repo-name {
-      padding: 5px 10px;
-      font-size: 18px;
-      letter-spacing: 2px;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -1px;
       display: block;
       color: @linkColor;
+      height: 32px;
+      white-space: nowrap;
+      font-weight: bold;
     }
   }
 
   .repo-commit {
-    padding: 10px;
-
     .repo-commit-message {
-      color: #000;
+      color: @textColor;
     }
 
     .repo-commit-date {
@@ -73,7 +68,7 @@
       letter-spacing: 0;
       font-style: italic;
       font-size: 12px;
-      color: #333;
+      color: @updatedColor;
     }
   }
 }
