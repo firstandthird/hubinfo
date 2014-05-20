@@ -1,10 +1,11 @@
 /*!
- * hubinfo - A client side github widget for repo info
+ * hubinfo - a github repo info javascript widget
  * v0.2.0
- * http://projects.jga.me/hubinfo/
- * copyright Greg Allen 2013
+ * https://github.com/firstandthird/hubinfo
+ * copyright First+Third 2014
  * MIT License
 */
+
 (function($) {
   var getProjectInfo = function(user, repo, cb) {
     $.ajax({

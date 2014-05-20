@@ -1,0 +1,23 @@
+{
+  "name": "hubinfo",
+  "description": "a github repo info javascript widget",
+  "version": "0.2.0",
+  "homepage": "https://github.com/firstandthird/hubinfo",
+  "license": "MIT",
+  "copyright": "First+Third",
+  "main": "dist/hubinfo.bower.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "assert": "*",
+    "blanket": "*"
+  },
+  "ignore": [
+    "test",
+    "example",
+    "lib",
+    "Gruntfile.js",
+    "package.json",
+    "grunt"
+  ]
+}

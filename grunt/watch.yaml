@@ -1,0 +1,36 @@
+options:
+  livereload: true
+lib:
+  files:
+    - '<%= jshint.lib %>'
+  tasks:
+    - 'lib'
+styles:
+  files:
+    - 'lib/**/*.less'
+  tasks:
+    - 'styles'
+images:
+  files:
+    - 'lib/images/*'
+  tasks:
+    - 'copy:images'
+test:
+  files:
+    - '<%= jshint.test %>'
+    - 'test/index.html'
+  tasks:
+    - 'jshint'
+    - 'mocha'
+    - 'notify:tests'
+example:
+  files:
+    - 'example/*'
+tools:
+  files:
+    - 'bower.json'
+    - 'Gruntfile.js'
+    - 'grunt/*.yaml'
+  options:
+    reload: true
+  tasks: 'default'

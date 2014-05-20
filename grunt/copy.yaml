@@ -1,0 +1,7 @@
+images:
+  files:
+    - 
+      expand: true
+      cwd: 'lib/images'
+      src: '**'
+      dest: 'dist/images/'
