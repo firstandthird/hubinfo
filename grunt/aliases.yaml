@@ -1,0 +1,33 @@
+test:
+  - jshint:test
+  #- jscs:test
+  - mocha
+lib:
+  - jshint:lib
+  #- jscs:lib
+  - bower
+  - concat:lib
+  # comment this out if you don't need lib.full.js
+  - concat:full
+  - clean:bower
+  - test
+styles:
+  - less
+dist:
+  - clean:dist
+  - lib
+  - styles
+  - copy:images
+  - uglify
+  - bytesize
+dev:
+  - lib
+  - styles
+  - copy:images
+  - connect:server
+  - watch
+tools:
+  - jshint:tools
+default:
+  - tools
+  - dist

@@ -5,7 +5,6 @@
  * copyright First+Third 2014
  * MIT License
 */
-
 (function($) {
   var getProjectInfo = function(user, repo, cb) {
     $.ajax({

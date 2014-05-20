@@ -1,0 +1,77 @@
+@linkColor: #4183c4;
+@textColor: #333;
+@updatedColor: #999;
+@borderColor: #f1f1f1;
+
+.github-repo {
+  position: relative;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @borderColor;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .repo-header {
+    .repo-stats {
+      font-size: 12px;
+      float: right;
+      margin: 5px 10px 0 0;
+      line-height: 20px;
+
+      span, a {
+        padding-right: 5px;
+        padding: 0 5px 0 25px;
+        color: #000;
+      }
+
+      .repo-watchers {
+        background: url(images/repostat.png) no-repeat;
+        background-position: 5px -5px;
+      }
+
+      .repo-forks {
+        background: url(images/repostat.png) no-repeat;
+        background-position: 5px -55px;
+      }
+
+      .repo-twitter {
+        float: right;
+        margin-left: 5px;
+      }
+    }
+
+    .repo-name {
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      display: block;
+      color: @linkColor;
+      height: 32px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+
+  .repo-commit {
+    .repo-commit-message {
+      color: @textColor;
+    }
+
+    .repo-commit-date {
+      display: block;
+      margin-top: 10px;
+      letter-spacing: 0;
+      font-style: italic;
+      font-size: 12px;
+      color: @updatedColor;
+    }
+  }
+}
