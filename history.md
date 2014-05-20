@@ -1,4 +1,11 @@
 
+0.2.0 / 2014-05-20 
+==================
+
+  * New design.
+  * Added embeddable iframe.
+  * Switched over to Grunt for building and watch tasks.
+
 0.1.2 / 2012-07-25 
 ==================
 
