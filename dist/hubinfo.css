@@ -1,9 +1,9 @@
 .github-repo {
   position: relative;
   font-size: 14px;
-  font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   padding-bottom: 20px;
+  border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
 }
 .github-repo a {
@@ -20,17 +20,31 @@
 }
 .github-repo .repo-header .repo-stats span,
 .github-repo .repo-header .repo-stats a {
-  padding-right: 5px;
   padding: 0 5px 0 25px;
   color: #000;
 }
-.github-repo .repo-header .repo-stats .repo-watchers {
-  background: url(images/repostat.png) no-repeat;
-  background-position: 5px -5px;
-}
+.github-repo .repo-header .repo-stats .repo-watchers,
 .github-repo .repo-header .repo-stats .repo-forks {
-  background: url(images/repostat.png) no-repeat;
-  background-position: 5px -55px;
+  position: relative;
+}
+.github-repo .repo-header .repo-stats .repo-watchers:before,
+.github-repo .repo-header .repo-stats .repo-forks:before {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAANCAYAAADfavzVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3Q0NGRDNGOTA5MzExMUU0OUY4RUVGQ0QxNTVFMTEwNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3Q0NGRDNGQTA5MzExMUU0OUY4RUVGQ0QxNTVFMTEwNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdDQ0ZEM0Y3MDkzMTExRTQ5RjhFRUZDRDE1NUUxMTA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdDQ0ZEM0Y4MDkzMTExRTQ5RjhFRUZDRDE1NUUxMTA2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+6/fIvwAAAXZJREFUeNrEVNFRwzAMdX0M0BHCBA0TQDagG7Qf+YcJYIPCdz7oBi0TJJ2gGSHZIBsEiXvOCV2Uuu0B7+5dHFmynyXLs77vXVEUiSPked44Act+ChT3oG20RuWugMeiH0y5gWVXglbEI3GupviApeJV8MSU+AmmYs6yDyJxEJ4rldg9sblEkJWUG+KWeMT/nZiz7GMIYjP8l8jquSITrHOrr5snQ4fTNxiHOzVqF/N8kLUw1UJkqg4cixf1/ZHRsMkTlxMCQmm5DG/WquxLfjzcEJ+JOyVyDZ/DRBbZf469VjDz3W/pyw3Y0Rr1jLseAbzJo8gS3789OS0jSpai1DstMiKuhFALXM3My4WR2Q1Yq9K6icyy70KW+5RIEZdBjCmS/by6kyEoOHQXvibRHQ+xVtWWmHdeBU020H/Cj7xh3xm13rNfQtirwnWrlH3o+oB74kGMqz8UK5tvi1cnsYS+o9tdbCMJtOJg7TmBJPDVeKcHfAkwAFlgtWxNzZ7GAAAAAElFTkSuQmCC") no-repeat;
+  position: absolute;
+  content: " ";
+  left: 5px;
+  top: 1px;
+}
+.github-repo .repo-header .repo-stats .repo-watchers:before {
+  background-position: -31px -2px;
+  width: 12px;
+  height: 13px;
+}
+.github-repo .repo-header .repo-stats .repo-forks:before {
+  background-position: -14px 0;
+  width: 12px;
+  height: 13px;
+  top: 0;
 }
 .github-repo .repo-header .repo-stats .repo-twitter {
   float: right;
@@ -41,13 +55,9 @@
   line-height: 32px;
   letter-spacing: -1px;
   display: block;
-  color: #4183c4;
   height: 32px;
   white-space: nowrap;
   font-weight: bold;
-}
-.github-repo .repo-commit .repo-commit-message {
-  color: #333333;
 }
 .github-repo .repo-commit .repo-commit-date {
   display: block;
@@ -55,5 +65,4 @@
   letter-spacing: 0;
   font-style: italic;
   font-size: 12px;
-  color: #999999;
 }
