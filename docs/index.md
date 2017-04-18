@@ -30,9 +30,9 @@ Out of the box, the twitter share widget isn't there, but if you want to add it,
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 	});
 
-##History
+## History
 
 [View](https://raw.github.com/jgallen23/hubinfo/master/history.md)
 
-##Contributors
+## Contributors
 - Greg Allen ([@jgaui](http://twitter.com/jgaui)) [jga.me](http://jga.me)

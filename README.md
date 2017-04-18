@@ -1,4 +1,4 @@
-#HubInfo
+# HubInfo
 
 [HubInfo](http://projects.jga.me/hubinfo/) is a jQuery plugin to show information about your GitHub repo. 
 
